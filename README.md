@@ -1,6 +1,6 @@
 # MongoDB with Docker
 Example of MongoDB with Docker container.
-References:
+References:<br>
 - https://hub.docker.com/_/mongo
 - https://www.mongodb.com/compatibility/docker
 
@@ -8,7 +8,7 @@ References:
 The goal is to create a MongoDB container that saves data persistently and easily copied to a backup. I also followed the best practices and insights from the official mongo documentation.
 
 ## Start the containers
-- clone the repo https://github.com/manuel-cestaro-personal/MSSQL-Docker/archive/refs/heads/main.zip
+- clone the repo https://github.com/manuel-cestaro-personal/MongoDB-Docker/archive/refs/heads/main.zip
 - `cd MongoDB-Docker`
 - `mkdir .secrets && cd .secrets`
 - `nano mongo_user.txt` --> write the name of the mongo user
