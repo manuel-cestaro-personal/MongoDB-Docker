@@ -1,6 +1,6 @@
 # MongoDB with Docker
-Example of MongoDB with Docker container.
-References:<br>
+Example of MongoDB with Docker container.<br>
+References:
 - https://hub.docker.com/_/mongo
 - https://www.mongodb.com/compatibility/docker
 
