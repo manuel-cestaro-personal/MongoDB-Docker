@@ -1,0 +1,32 @@
+version: "3.7"
+
+secrets:
+  MONGO_PWD:
+    file: ./.secrets/mongo_pwd.txt #edit with your path if differnt from my guide
+  MONGO_USER:
+    file: ./.secrets/mongo_user.txt #edit with your path if differnt from my guide
+
+services:
+  mongo:
+    image: mongo
+    container_name: mongo
+    restart: unless-stopped
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME_FILE=/var/run/secrets/MONGO_USER
+      - MONGO_INITDB_ROOT_PASSWORD_FILE=/var/run/secrets/MONGO_PWD
+    secrets:
+      - MONGO_PWD
+      - MONGO_USER
+    ports:
+      - 27017:27017
+    volumes:
+      - ./mongo-volume:/data/db #edit with your path
+      - type: bind
+        source: ./.mongo-mount/mongod.conf.orig #edit with your path
+        target: /etc/mongod.conf.orig
+    networks:
+      - <Your_Network_Name> #edit with your network
+
+networks:
+  <Your_Network_Name>: #edit with your network
+    external: true
