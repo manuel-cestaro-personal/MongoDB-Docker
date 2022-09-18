@@ -22,6 +22,8 @@ The goal is to create a MongoDB container that saves data persistently and easil
 
 ## Setup application users
 
+## Access to the DB from outside the docker network
+
 ## Conclusions
 Nothing&#128517;, this is my way of working!&#128513;<br>
 It sounds simple but it took me many hours of work.<br>
