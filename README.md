@@ -20,6 +20,8 @@ The goal is to create a MongoDB container that saves data persistently and easil
 - `docker-compose up -d`
 - use `docker ps -a` to check the containers
 
+## Setup application users
+
 ## Conclusions
 Nothing&#128517;, this is my way of working!&#128513;<br>
 It sounds simple but it took me many hours of work.<br>
