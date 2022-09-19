@@ -27,17 +27,30 @@ The goal is to create a MongoDB container that saves data persistently and easil
 > mongosh admin -u 'username'
 
 ## Useful commands
+> \# show the created databases; don't delete default dbs<br />
+> show dbs<br />
+> \# with the same command you can chance workin db or create a new db<br />
+> use <DB_Name><br />
+> \# delete the current db<br />
+> db.dropDatabase()<br />
+> \# creare a collection for the current db<br />
+> db.createCollection(<Collection_Name>)<br />
+> \# show collections for the current db<br />
+> show collections<br />
+> \# delete a specific collection for the current db<br />
+> db.<Collection_Name>.drop()<br />
+&#9888;A database without a collection will be automatically delete!
 
 ## Setup application users
 Remember that the users exist in the DB where are created. So this must be specified when you use an user different form the main admin!
-> \- use <DB_Name><br />
-> \- show users&nbsp;&nbsp;\# show users in the current DB<br />
-> \- db.createUser\(<br />
+> use <DB_Name><br />
+> show users&nbsp;&nbsp;\# show users in the current DB<br />
+> db.createUser\(<br />
 > \{ user: "adminBudo3k",<br />
 &nbsp;&nbsp;pwd: "StartsS0n=Z3usK1ng",<br />
 >&nbsp;&nbsp;roles: \[\{role: "readWrite" , db:"Budo3k"\}\]<br />
 > \}\)<br />
-> \- show users
+> show users
 
 ## Access to the DB from outside the docker network
 
