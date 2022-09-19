@@ -57,13 +57,14 @@ So this must be specified when you use an user different form the main admin!
 ## Access to the DB from outside the docker network
 In the compose file you can see a volume that point to the file `mongod.conf.orig`. This is the configuration file of MongoDB and editing it you can quicly permit or deny the access to the container from the server port.<br />
 Edit as follow:
->\# network interfaces
->net:
->&nbsp;&nbsp;port: 27017
->&nbsp;&nbsp;bindIp: 127.0.0.1,<Server_IP>
+>\# network interfaces<br />
+>net:<br />
+>&nbsp;&nbsp;port: 27017<br />
+>&nbsp;&nbsp;bindIp: 127.0.0.1,<Server_IP><br />
 
 In this way you can access from a GUI as **MongoDB Compass**: https://www.mongodb.com/it-it/products/compass
-Use a connection string as `mongodb://<username>:<pwd>@<server_ip>:27017/?authMechanism=DEFAULT&authSource=<DB_Name>`
+Use a connection string as:
+`mongodb://<username>:<pwd>@<server_ip>:27017/?authMechanism=DEFAULT&authSource=<DB_Name>`
 
 ## Conclusions
 Nothing&#128517;, this is my way of working!&#128513;<br>
