@@ -39,7 +39,8 @@ The goal is to create a MongoDB container that saves data persistently and easil
 > show collections<br />
 > \# delete a specific collection for the current db<br />
 > db.<Collection_Name>.drop()<br />
-&#9888;A database without a collection will be automatically delete!
+
+&#9888; A database without a collection will be automatically delete!
 
 ## Setup application users
 Remember that the users exist in the DB where are created. So this must be specified when you use an user different form the main admin!
