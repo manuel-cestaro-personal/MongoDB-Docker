@@ -11,7 +11,7 @@ The goal is to create a MongoDB container that saves data persistently and easil
 - clone the repo https://github.com/manuel-cestaro-personal/MongoDB-Docker/archive/refs/heads/main.zip
 - `cd MongoDB-Docker`
 - `mkdir .secrets && cd .secrets`
-- `nano mongo_user.txt` --> write the name of the mongo user
+- `nano mongo_user.txt` --> write the name of the mongo admin user ("root" usually)
 - `nano mongo_pwd.txt` --> write the pwd of the mongo user
 - `cd ..`
 - `docker network create <Your_Network_Name>` --> create your docker network
@@ -20,7 +20,24 @@ The goal is to create a MongoDB container that saves data persistently and easil
 - `docker-compose up -d`
 - use `docker ps -a` to check the containers
 
+## Access to the command line
+> \# access to container command line<br />
+> docker exec -it mongo bash<br />
+> \# access to mongo command line; use the credentials wrote in .secret<br />
+> mongosh admin -u 'username'
+
+## Useful commands
+
 ## Setup application users
+Remember that the users exist in the DB where are created. So this must be specified when you use an user different form the main admin!
+> use <DB_Name><br />
+> show users \# show users in the current DB<br />
+> db.createUser\(<br />
+> \{  user: "adminBudo3k",<br />
+>    pwd: "StartsS0n=Z3usK1ng",<br />
+><br />
+>    roles:\[\{role: "readWrite" , db:"Budo3k"\}\]\}\)<br /><br />
+> show users
 
 ## Access to the DB from outside the docker network
 
