@@ -62,8 +62,8 @@ Edit as follow:
 >&nbsp;&nbsp;port: 27017<br />
 >&nbsp;&nbsp;bindIp: 127.0.0.1,<Server_IP><br />
 
-In this way you can access from a GUI as **MongoDB Compass**: https://www.mongodb.com/it-it/products/compass
-Use a connection string as:
+In this way you can access from a GUI as **MongoDB Compass**: https://www.mongodb.com/it-it/products/compass<br />
+Use a connection string as:<br />
 `mongodb://<username>:<pwd>@<server_ip>:27017/?authMechanism=DEFAULT&authSource=<DB_Name>`
 
 ## Conclusions
