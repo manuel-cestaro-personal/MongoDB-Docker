@@ -31,12 +31,12 @@ The goal is to create a MongoDB container that saves data persistently and easil
 ## Setup application users
 Remember that the users exist in the DB where are created. So this must be specified when you use an user different form the main admin!
 > use <DB_Name><br />
-> show users \# show users in the current DB<br />
+> show users&nbsp;&nbsp;\# show users in the current DB<br />
 > db.createUser\(<br />
-> \{  user: "adminBudo3k",<br />
->    pwd: "StartsS0n=Z3usK1ng",<br />
-><br />
->    roles:\[\{role: "readWrite" , db:"Budo3k"\}\]\}\)<br /><br />
+> \{ user: "adminBudo3k",<br />
+&nbsp;&nbsp;pwd: "StartsS0n=Z3usK1ng",<br />
+>&nbsp;&nbsp;roles: \[\{role: "readWrite" , db:"Budo3k"\}\]<br />
+> \}\)<br />
 > show users
 
 ## Access to the DB from outside the docker network
