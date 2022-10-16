@@ -48,9 +48,9 @@ So this must be specified when you use an user different form the main admin!
 > use <DB_Name><br />
 > show users&nbsp;&nbsp;\# show users in the current DB<br />
 > db.createUser\(<br />
-> \{ user: "adminBudo3k",<br />
-&nbsp;&nbsp;pwd: "StartsS0n=Z3usK1ng",<br />
->&nbsp;&nbsp;roles: \[\{role: "readWrite" , db:"Budo3k"\}\]<br />
+> \{ user: "<USER>",<br />
+&nbsp;&nbsp;pwd: "<PWD>",<br />
+>&nbsp;&nbsp;roles: \[\{role: "readWrite" , db:"<DB>"\}\]<br />
 > \}\)<br />
 > show users
 
