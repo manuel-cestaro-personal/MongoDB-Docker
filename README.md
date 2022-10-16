@@ -48,8 +48,8 @@ So this must be specified when you use an user different form the main admin!
 > use <DB_Name><br />
 > show users&nbsp;&nbsp;\# show users in the current DB<br />
 > db.createUser\(<br />
-> \{ user: "<Username>",<br />
-&nbsp;&nbsp;pwd: "<Password>",<br />
+> \{ user: "<User_name>",<br />
+&nbsp;&nbsp;pwd: "<Pass_word>",<br />
 >&nbsp;&nbsp;roles: \[\{role: "readWrite" , db:"<DB_Name>"\}\]<br />
 > \}\)<br />
 > show users
