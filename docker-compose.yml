@@ -21,9 +21,6 @@ services:
       - 27017:27017
     volumes:
       - ./mongo-volume:/data/db #edit with your path
-      - type: bind
-        source: ./.mongo-mount/mongod.conf.orig #edit with your path
-        target: /etc/mongod.conf.orig
     networks:
       - <Your_Network_Name> #edit with your network
 
