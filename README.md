@@ -51,7 +51,8 @@ So this must be specified when you use an user different form the main admin!
 > \{ user: "<User_name>",<br />
 &nbsp;&nbsp;pwd: "<Pass_word>",<br />
 >&nbsp;&nbsp;roles: \[\{role: "readWrite" , db:"<DB_Name>"\}\],<br />
->&nbsp;&nbsp;mechanisms: [ "<SCRAM-SHA-1|SCRAM-SHA-256>" ]&nbsp;&nbsp;&nbsp;&nbsp;\# The default is both SCRAM-SHA-1 and SCRAM-SHA-256.<br />
+>&nbsp;&nbsp;mechanisms: [ "<SCRAM-SHA-1|SCRAM-SHA-256>" ]<br />
+>&nbsp;&nbsp;&nbsp;&nbsp;\# The default is both SCRAM-SHA-1 and SCRAM-SHA-256.<br />
 > \}\)<br />
 > show users
 
