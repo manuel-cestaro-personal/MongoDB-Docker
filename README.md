@@ -33,7 +33,7 @@ The goal is to create a MongoDB container that saves data persistently and easil
 > use <DB_Name><br />
 > \# delete the current db<br />
 > db.dropDatabase()<br />
-> \# creare a collection for the current db<br />
+> \# creare a collection for the current db, !write the collection name between ''<br />
 > db.createCollection(<Collection_Name>)<br />
 > \# show collections for the current db<br />
 > show collections<br />
